@@ -10,8 +10,8 @@ error_reporting(E_ALL);
 // Database connection
 $host = 'localhost';
 $dbname = 'waltzer';
-$username = 'root';
-$password = '';
+$username = 'appuser';
+$password = 'waltzerW@312#';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

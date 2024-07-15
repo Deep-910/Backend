@@ -10,6 +10,6 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-W
 session_unset();
 //header("Location: /login"); // Redirect to login page after logout
 ?>
-<meta http-equiv="refresh" content="0; url = http://waltzify.com/" />
+<meta http-equiv="refresh" content="0; url = http://waltzify.com" />
 <?php
 ?>

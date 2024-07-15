@@ -9,7 +9,7 @@ header('Access-Control-Allow-Credentials: true');
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
 
-$conn = new mysqli("localhost", "root", "", "waltzer");
+$conn = new mysqli("localhost", "appuser", "waltzerW@312#", "waltzer");
 
 if (mysqli_connect_error()) {
     echo json_encode([["result" => "Database connection failed"]]);

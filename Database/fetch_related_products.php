@@ -11,8 +11,8 @@ header('Content-Type: application/json');
 
 // Database connection parameters
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "appuser";
+$password = "waltzerW@312#";
 $dbname = "waltzer";
 
 // Create connection
@@ -68,4 +68,3 @@ $conn->close();
 
 // Return the related products as JSON
 echo json_encode($relatedProducts);
-?>

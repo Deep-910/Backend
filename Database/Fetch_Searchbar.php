@@ -3,8 +3,8 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "appuser";
+$password = "waltzerW@312#";
 $dbname = "waltzer";
 
 // Create connection
@@ -29,4 +29,3 @@ if ($result->num_rows > 0) {
 echo json_encode($products);
 
 $conn->close();
-?>

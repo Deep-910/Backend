@@ -2,13 +2,12 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-header("Access-Control-Allow-Origin: 
-http://waltzify.com");
+header("Access-Control-Allow-Origin: http://waltzify.com");
 header("Access-Control-Allow-Headers: *");
 header("Access-Control-Allow-Methods: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-$conn = new mysqli("localhost", "root", "", "waltzer");
+$conn = new mysqli("localhost", "appuser", "waltzerW@312#", "waltzer");
 
 if ($conn->connect_error) {
     die(json_encode(["result" => "Connection failed: " . $conn->connect_error]));

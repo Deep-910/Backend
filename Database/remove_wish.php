@@ -5,7 +5,7 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 header("Access-Control-Allow-Methods: *");
 
-$conn = mysqli_connect("localhost", "root", "", "waltzer");
+$conn = new mysqli("localhost", "appuser", "waltzerW@312#", "waltzer");
 
 if ($conn === false) {
     die("ERROR: Couldn't connect" . mysqli_connect_error());

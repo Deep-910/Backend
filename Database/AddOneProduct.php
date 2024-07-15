@@ -5,7 +5,7 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 header("Access-Control-Allow-Methods: *");
 
-$conn = new mysqli("localhost", "root", "", "waltzer");
+$conn = new mysqli("localhost", "appuser", "waltzerW@312#", "waltzer");
 
 if (mysqli_connect_error()) {
     echo json_encode([["result" => "Database connection failed"]]);
@@ -71,4 +71,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['img1']) && isset($_FI
 } else {
     echo json_encode([["result" => "Invalid input"]]);
 }
-?>

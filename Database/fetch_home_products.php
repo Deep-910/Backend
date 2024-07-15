@@ -5,7 +5,7 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 header("Access-Control-Allow-Methods: *");
 
-$conn = new mysqli("localhost", "root", "", "waltzer");
+$conn = new mysqli("localhost", "appuser", "waltzerW@312#", "waltzer");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -23,4 +23,3 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 echo json_encode($products);
-?>
